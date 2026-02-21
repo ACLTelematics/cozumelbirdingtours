@@ -1,0 +1,90 @@
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "postgresql"
+  url      = env("DATABASE_URL")
+}
+
+model Tour {
+  id               String      @id @default(uuid())
+  name             String
+  slug             String      @unique
+  shortDescription String
+  fullDescription  String      @db.Text
+  duration         Int
+  price            Decimal     @db.Decimal(10, 2)
+  maxPeople        Int
+  languages        String[]
+  includes         String[]
+  notIncludes      String[]
+  whatToBring      String[]
+  highlights       String[]
+  itinerary        Json?
+  isActive         Boolean     @default(true)
+  featured         Boolean     @default(false)
+  sortOrder        Int         @default(0)
+  metaTitle        String?
+  metaDescription  String?
+  createdAt        DateTime    @default(now())
+  updatedAt        DateTime    @updatedAt
+  images           TourImage[]
+
+  @@index([slug])
+  @@index([isActive])
+  @@index([featured])
+}
+
+model TourImage {
+  id        String   @id @default(uuid())
+  tourId    String
+  imageUrl  String
+  altText   String?
+  caption   String?
+  sortOrder Int      @default(0)
+  isMain    Boolean  @default(false)
+  createdAt DateTime @default(now())
+  tour      Tour     @relation(fields: [tourId], references: [id], onDelete: Cascade)
+
+  @@index([tourId])
+  @@index([sortOrder])
+}
+
+model GalleryImage {
+  id           String    @id @default(uuid())
+  imageUrl     String
+  category     String
+  title        String?
+  description  String?
+  altText      String?
+  photographer String?
+  location     String?
+  takenAt      DateTime?
+  isActive     Boolean   @default(true)
+  sortOrder    Int       @default(0)
+  createdAt    DateTime  @default(now())
+
+  @@index([category])
+  @@index([isActive])
+}
+
+model ContactInquiry {
+  id           String   @id @default(uuid())
+  name         String
+  email        String
+  phone        String?
+  message      String   @db.Text
+  tourInterest String?
+  source       String?
+  ipAddress    String?
+  userAgent    String?
+  status       String   @default("new")
+  notes        String?  @db.Text
+  createdAt    DateTime @default(now())
+  updatedAt    DateTime @updatedAt
+
+  @@index([email])
+  @@index([status])
+  @@index([createdAt])
+}
