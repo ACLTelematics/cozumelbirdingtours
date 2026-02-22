@@ -1,0 +1,79 @@
+{
+  "nav": {
+    "home": "Home",
+    "tours": "Tours",
+    "gallery": "Gallery",
+    "contact": "Contact",
+    "bookNow": "Book Now"
+  },
+  "home": {
+    "hero": {
+      "subtitle": "Cozumel · México",
+      "title": "Cozumel Birding Tours",
+      "description": "Discover 200+ bird species in paradise",
+      "cta": "Book Your Experience"
+    },
+    "featured": {
+      "title": "Featured Tours",
+      "subtitle": "Experience the best birding adventures"
+    },
+    "why": {
+      "title": "Why Choose Us",
+      "endemic": "Endemic Species",
+      "endemicDesc": "Cozumel hosts unique species found nowhere else",
+      "guides": "Expert Local Guides",
+      "guidesDesc": "15+ years of experience",
+      "small": "Small Groups",
+      "smallDesc": "Max 6 people, personalized experience"
+    },
+    "testimonials": {
+      "title": "What Our Guests Say"
+    },
+    "cta": {
+      "title": "Ready for your birding adventure?",
+      "button": "Contact us on WhatsApp"
+    }
+  },
+  "tours": {
+    "title": "Our Birding Tours",
+    "subtitle": "Explore Cozumel's incredible biodiversity",
+    "viewDetails": "View Details",
+    "duration": "Duration",
+    "maxPeople": "Max people",
+    "includes": "Included",
+    "notIncludes": "Not included",
+    "whatToBring": "What to bring",
+    "highlights": "Highlights",
+    "itinerary": "Itinerary",
+    "bookWhatsApp": "Book via WhatsApp",
+    "customTour": "Don't see what you're looking for?",
+    "contactUs": "Contact us for custom tours"
+  },
+  "gallery": {
+    "title": "Photo Gallery",
+    "subtitle": "Cozumel's birds in their habitat",
+    "all": "All",
+    "birds": "Birds",
+    "nature": "Nature",
+    "tours": "Tours",
+    "guests": "Guests",
+    "loadMore": "Load More",
+    "cta": "Want to capture moments like these?",
+    "ctaButton": "Book a Photography Tour"
+  },
+  "contact": {
+    "title": "Get in Touch",
+    "subtitle": "We're here to help plan your adventure",
+    "name": "Name",
+    "email": "Email",
+    "phone": "Phone (optional)",
+    "message": "Message",
+    "tourInterest": "Interested in a tour?",
+    "send": "Send Message",
+    "success": "Message sent! We'll be in touch soon.",
+    "error": "Something went wrong. Please try again."
+  },
+  "footer": {
+    "rights": "All rights reserved"
+  }
+}

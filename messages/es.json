@@ -1,0 +1,79 @@
+{
+  "nav": {
+    "home": "Inicio",
+    "tours": "Tours",
+    "gallery": "Galería",
+    "contact": "Contacto",
+    "bookNow": "Reservar"
+  },
+  "home": {
+    "hero": {
+      "subtitle": "Cozumel · México",
+      "title": "Cozumel Birding Tours",
+      "description": "Descubre más de 200 especies de aves en el paraíso",
+      "cta": "Reserva tu Experiencia"
+    },
+    "featured": {
+      "title": "Tours Destacados",
+      "subtitle": "Vive las mejores aventuras de avistamiento"
+    },
+    "why": {
+      "title": "¿Por qué elegirnos?",
+      "endemic": "Especies Endémicas",
+      "endemicDesc": "Cozumel alberga especies únicas en el mundo",
+      "guides": "Guías Locales Expertos",
+      "guidesDesc": "Más de 15 años de experiencia",
+      "small": "Grupos Pequeños",
+      "smallDesc": "Máx 6 personas, experiencia personalizada"
+    },
+    "testimonials": {
+      "title": "Lo que dicen nuestros visitantes"
+    },
+    "cta": {
+      "title": "¿Listo para tu aventura de avistamiento?",
+      "button": "Contáctanos por WhatsApp"
+    }
+  },
+  "tours": {
+    "title": "Nuestros Tours de Avistamiento",
+    "subtitle": "Explora la increíble biodiversidad de Cozumel",
+    "viewDetails": "Ver Detalles",
+    "duration": "Duración",
+    "maxPeople": "Máx personas",
+    "includes": "Incluye",
+    "notIncludes": "No incluye",
+    "whatToBring": "Qué traer",
+    "highlights": "Destacados",
+    "itinerary": "Itinerario",
+    "bookWhatsApp": "Reservar por WhatsApp",
+    "customTour": "¿No encuentras lo que buscas?",
+    "contactUs": "Contáctanos para tours personalizados"
+  },
+  "gallery": {
+    "title": "Galería de Fotos",
+    "subtitle": "Las aves de Cozumel en su hábitat",
+    "all": "Todos",
+    "birds": "Aves",
+    "nature": "Naturaleza",
+    "tours": "Tours",
+    "guests": "Visitantes",
+    "loadMore": "Cargar más",
+    "cta": "¿Quieres capturar momentos como estos?",
+    "ctaButton": "Reserva un Tour Fotográfico"
+  },
+  "contact": {
+    "title": "Contáctanos",
+    "subtitle": "Estamos aquí para ayudarte a planear tu aventura",
+    "name": "Nombre",
+    "email": "Correo electrónico",
+    "phone": "Teléfono (opcional)",
+    "message": "Mensaje",
+    "tourInterest": "¿Te interesa algún tour?",
+    "send": "Enviar Mensaje",
+    "success": "¡Mensaje enviado! Nos pondremos en contacto pronto.",
+    "error": "Algo salió mal. Por favor intenta de nuevo."
+  },
+  "footer": {
+    "rights": "Todos los derechos reservados"
+  }
+}
