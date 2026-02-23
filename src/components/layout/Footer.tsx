@@ -1,5 +1,7 @@
 import Link from 'next/link'
 import { useTranslations, useLocale } from 'next-intl'
+import Image from 'next/image'
+import { FaFacebook, FaInstagram, FaTiktok, FaTripadvisor } from 'react-icons/fa'
 
 export default function Footer() {
   const t = useTranslations('nav')
@@ -7,19 +9,22 @@ export default function Footer() {
   const locale = useLocale()
 
   return (
-    <footer className="bg-[#1A1A1A] text-gray-300">
+    <footer className="bg-gradient-to-br from-[#006064] to-[#1B5E20] text-gray-200">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
         <div className="grid grid-cols-1 md:grid-cols-4 gap-8">
 
-          {/* Col 1: About */}
+          {/* Col 1: Logo + About */}
           <div className="col-span-1 md:col-span-1">
-            <div className="flex items-center gap-2 mb-4">
-              <span className="text-2xl">🦜</span>
-              <span className="font-bold text-white text-lg">
-                Cozumel Birding
-              </span>
+            <div className="mb-4">
+              <Image
+                src="/images/logo.png"
+                alt="Cozumel Birding Tours"
+                width={160}
+                height={60}
+                className="object-contain"
+              />
             </div>
-            <p className="text-sm text-gray-400 leading-relaxed">
+            <p className="text-sm text-gray-300 leading-relaxed">
               {locale === 'en'
                 ? 'Expert birding tours in Cozumel, México. Discover endemic species with local guides.'
                 : 'Tours de avistamiento de aves en Cozumel, México. Descubre especies endémicas con guías locales.'}
@@ -32,10 +37,26 @@ export default function Footer() {
               {locale === 'en' ? 'Quick Links' : 'Enlaces'}
             </h4>
             <ul className="space-y-2 text-sm">
-              <li><Link href={`/${locale}`} className="hover:text-[#1FB6B1] transition-colors">{t('home')}</Link></li>
-              <li><Link href={`/${locale}/tours`} className="hover:text-[#1FB6B1] transition-colors">{t('tours')}</Link></li>
-              <li><Link href={`/${locale}/gallery`} className="hover:text-[#1FB6B1] transition-colors">{t('gallery')}</Link></li>
-              <li><Link href={`/${locale}/contact`} className="hover:text-[#1FB6B1] transition-colors">{t('contact')}</Link></li>
+              <li>
+                <Link href={`/${locale}`} className="hover:text-white transition-colors">
+                  {t('home')}
+                </Link>
+              </li>
+              <li>
+                <Link href={`/${locale}/tours`} className="hover:text-white transition-colors">
+                  {t('tours')}
+                </Link>
+              </li>
+              <li>
+                <Link href={`/${locale}/gallery`} className="hover:text-white transition-colors">
+                  {t('gallery')}
+                </Link>
+              </li>
+              <li>
+                <Link href={`/${locale}/contact`} className="hover:text-white transition-colors">
+                  {t('contact')}
+                </Link>
+              </li>
             </ul>
           </div>
 
@@ -44,7 +65,7 @@ export default function Footer() {
             <h4 className="text-white font-semibold mb-4">
               {locale === 'en' ? 'Contact' : 'Contacto'}
             </h4>
-            <ul className="space-y-2 text-sm">
+            <ul className="space-y-3 text-sm">
               <li className="flex items-center gap-2">
                 <span>📧</span>
                 <span>info@cozumelbirding.com</span>
@@ -67,9 +88,11 @@ export default function Footer() {
             </h4>
             <ul className="space-y-2 text-sm">
               <li>{locale === 'en' ? 'Monday – Saturday' : 'Lunes – Sábado'}</li>
-              <li className="text-[#1FB6B1] font-medium">5:00 AM – 2:00 PM</li>
-              <li className="mt-2 text-gray-400">
-                {locale === 'en' ? 'WhatsApp available all day' : 'WhatsApp disponible todo el día'}
+              <li className="text-yellow-300 font-medium">5:00 AM – 2:00 PM</li>
+              <li className="mt-2 text-gray-300">
+                {locale === 'en'
+                  ? 'WhatsApp available all day'
+                  : 'WhatsApp disponible todo el día'}
               </li>
             </ul>
           </div>
@@ -77,14 +100,24 @@ export default function Footer() {
         </div>
 
         {/* Bottom bar */}
-        <div className="border-t border-gray-800 mt-8 pt-6 flex flex-col md:flex-row justify-between items-center gap-4 text-sm text-gray-500">
+        <div className="border-t border-white/10 mt-8 pt-6 flex flex-col md:flex-row justify-between items-center gap-4 text-sm text-gray-300">
           <p>© 2026 Cozumel Birding Tours. {f('rights')}.</p>
-          <div className="flex gap-4">
-            <a href="#" className="hover:text-[#1FB6B1] transition-colors">Facebook</a>
-            <a href="#" className="hover:text-[#1FB6B1] transition-colors">Instagram</a>
-            <a href="#" className="hover:text-[#1FB6B1] transition-colors">TripAdvisor</a>
+          <div className="flex gap-4 items-center">
+            <a href="https://facebook.com/TU_PAGINA" target="_blank" rel="noopener noreferrer" className="text-gray-300 hover:text-white transition-colors">
+              <FaFacebook size={22} />
+            </a>
+            <a href="https://instagram.com/TU_CUENTA" target="_blank" rel="noopener noreferrer" className="text-gray-300 hover:text-white transition-colors">
+              <FaInstagram size={22} />
+            </a>
+            <a href="https://tiktok.com/@TU_CUENTA" target="_blank" rel="noopener noreferrer" className="text-gray-300 hover:text-white transition-colors">
+              <FaTiktok size={22} />
+            </a>
+            <a href="https://tripadvisor.com/TU_PAGINA" target="_blank" rel="noopener noreferrer" className="text-gray-300 hover:text-white transition-colors">
+              <FaTripadvisor size={22} />
+            </a>
           </div>
         </div>
+
       </div>
     </footer>
   )
