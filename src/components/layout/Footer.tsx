@@ -100,8 +100,19 @@ export default function Footer() {
         </div>
 
         {/* Bottom bar */}
+        
         <div className="border-t border-white/10 mt-8 pt-6 flex flex-col md:flex-row justify-between items-center gap-4 text-sm text-gray-300">
-          <p>© 2026 Cozumel Birding Tours. {f('rights')}.</p>
+        <p>© 2026 Cozumel Birding Tours. {f('rights')}. Powered by{' '}
+  <a 
+    href="https://www.facebook.com/telematicscoz/" 
+    target="_blank" 
+    rel="noopener noreferrer" 
+    style={{ color: '#0CB7F2' }} 
+    className="font-semibold hover:underline transition-colors"
+  >
+    ACLTelematics
+  </a>
+</p>   
           <div className="flex gap-4 items-center">
             <a href="https://facebook.com/TU_PAGINA" target="_blank" rel="noopener noreferrer" className="text-gray-300 hover:text-white transition-colors">
               <FaFacebook size={22} />
