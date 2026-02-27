@@ -5,7 +5,7 @@ import { notFound } from 'next/navigation'
 import { routing } from '@/i18n/routing'
 import Navbar from '@/components/layout/Navbar'
 import Footer from '@/components/layout/Footer'
-//import WhatsAppButton from '@/components/layout/WhatsAppButton'
+import WhatsAppButton from '@/components/layout/WhatsAppButton'
 import './globals.css'
 
 export const metadata: Metadata = {
@@ -37,7 +37,7 @@ export default async function LocaleLayout({
             {children}
           </main>
           <Footer />
-	  {/* <WhatsAppButton /> */}
+          <WhatsAppButton />
         </NextIntlClientProvider>
       </body>
     </html>

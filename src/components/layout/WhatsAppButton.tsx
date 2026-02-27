@@ -9,14 +9,14 @@ export default function WhatsAppButton() {
     ? 'Hello! I am interested in your birding tours in Cozumel.'
     : 'Hola! Me interesa información sobre sus tours de avistamiento en Cozumel.'
 
-  const whatsappUrl = `https://wa.me/5219871234567?text=${encodeURIComponent(message)}`
+  const whatsappUrl = `https://wa.me/5219871134222?text=${encodeURIComponent(message)}`
 
   return (
-    
+    <a
       href={whatsappUrl}
       target="_blank"
       rel="noopener noreferrer"
-      className="fixed bottom-6 right-6 z-50 bg-[#25D366] hover:bg-[#20BA5A] text-white rounded-full w-14 h-14 flex items-center justify-center shadow-lg transition-transform hover:scale-110"
+      className="fixed bottom-10 right-10 z-50 bg-[#25D366] hover:bg-[#20BA5A] text-white rounded-full w-14 h-14 flex items-center justify-center shadow-lg transition-transform hover:scale-110"
       aria-label="WhatsApp"
     >
       <svg

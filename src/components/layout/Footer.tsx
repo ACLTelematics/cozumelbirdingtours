@@ -68,11 +68,11 @@ export default function Footer() {
             <ul className="space-y-3 text-sm">
               <li className="flex items-center gap-2">
                 <span>📧</span>
-                <span>info@cozumelbirding.com</span>
+                <span> cozumelbirdingtours@gmail.com </span>
               </li>
               <li className="flex items-center gap-2">
                 <span>📱</span>
-                <span>+52 987 123 4567</span>
+                <span>+52 987 113 4222</span>
               </li>
               <li className="flex items-center gap-2">
                 <span>📍</span>
