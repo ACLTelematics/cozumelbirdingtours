@@ -46,21 +46,20 @@ export default function Hero() {
       </div>
 
       {/* Tira delgada horizontal en la parte inferior */}
-      <div className="absolute bottom-0 left-0 right-0 z-10 bg-white/20 backdrop-blur-md py-3">
+      <div className="absolute bottom-0 left-0 right-0 z-10 bg-[#1B5E20]/60 backdrop-blur-md py-3">
         <div className="flex items-center justify-center gap-6 flex-wrap px-4">
-          <p className="text-[#1FB6B1] font-medium tracking-widest uppercase text-sm">
+          <p className="text-white font-medium tracking-widest uppercase text-sm">
             {t('subtitle')}
           </p>
           <span className="text-white/40 hidden md:block">|</span>
-          <h1 className="text-xl md:text-2xl font-bold text-white leading-tight">
+          <h1 className="text-xl md:text-2xl font-bold text-white leading-tight drop-shadow-[0_2px_8px_rgba(21,101,192,0.9)]">
             {t('title')}
           </h1>
           <span className="text-white/40 hidden md:block">|</span>
-          <p className="text-sm text-gray-200">
+          <p className="text-sm text-white drop-shadow-[0_2px_6px_rgba(21,101,192,0.7)]">
             {t('description')}
           </p>
         </div>
-
         {/* Dots dentro de la tira */}
         <div className="flex justify-center gap-2 mt-2">
           {slides.map((_, i) => (

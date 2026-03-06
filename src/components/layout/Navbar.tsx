@@ -55,10 +55,12 @@ export default function Navbar() {
               <Link
                 key={link.href}
                 href={link.href}
-                className="relative text-white font-semibold text-base tracking-wide drop-shadow-md group transition-all duration-300"
+                className="relative text-white font-semibold text-base tracking-wide group transition-all duration-300"
+                style={{
+                textShadow: '-1px -1px 0 #1FB6B1, 1px -1px 0 #1FB6B1, -1px 1px 0 #1FB6B1, 1px 1px 0 #1FB6B1'          }}
               >
                 {link.label}
-                <span className="absolute -bottom-1 left-0 w-0 h-0.5 bg-white rounded-full transition-all duration-300 group-hover:w-full" />
+                <span className="absolute -bottom-1 left-0 w-0 h-0.5 bg-white rounded-full transition-all duration-300 group-hover:w-full shadow-lg" />
               </Link>
             ))}
           </div>
@@ -68,7 +70,10 @@ export default function Navbar() {
             {/* Language toggle */}
             <button
               onClick={toggleLocale}
-              className="text-base font-bold text-white border border-white/50 rounded-full px-4 py-1.5 hover:bg-white/20 transition-all duration-300 drop-shadow-md"
+              className="text-base font-bold text-white border-2 border-white rounded-full px-4 py-1.5 hover:bg-white/20 transition-all duration-300"
+              style={{
+                textShadow: '0 2px 4px rgba(245,124,0,0.9), 1px 1px 2px rgba(245,124,0,1)'
+              }}
             >
               {locale === 'en' ? 'ES' : 'EN'}
             </button>
@@ -77,7 +82,10 @@ export default function Navbar() {
             <Button
               asChild
               className="text-white font-bold rounded-full px-8 py-2 text-base shadow-lg transition-all duration-300 hover:scale-105 hover:shadow-xl border-0"
-              style={{ background: 'linear-gradient(135deg, #0096C7 0%, #023E8A 100%)' }}
+              style={{ 
+                background: 'linear-gradient(135deg, #0096C7 0%, #023E8A 100%)',
+                textShadow: '0 2px 4px rgba(245,124,0,0.6), 1px 1px 2px rgba(245,124,0,0.8)'
+              }}
             >
               <Link href={`/${locale}/contact`}>
                 {t('bookNow')}
@@ -87,8 +95,11 @@ export default function Navbar() {
 
           {/* Mobile menu button */}
           <button
-            className="md:hidden text-white drop-shadow-md"
+            className="md:hidden text-white"
             onClick={() => setIsOpen(!isOpen)}
+            style={{
+              textShadow: '0 2px 4px rgba(245,124,0,0.9)'
+            }}
           >
             {isOpen ? <X size={24} /> : <Menu size={24} />}
           </button>
@@ -103,7 +114,10 @@ export default function Navbar() {
               <Link
                 key={link.href}
                 href={link.href}
-                className="text-white font-semibold text-base hover:text-orange-200 transition-colors drop-shadow-md"
+                className="text-white font-semibold text-base hover:text-orange-200 transition-colors"
+                style={{
+                  textShadow: '0 2px 4px rgba(0, 245, 204, 0.9), 1px 1px 2px rgb(0, 245, 245)'
+                }}
                 onClick={() => setIsOpen(false)}
               >
                 {link.label}
@@ -112,14 +126,20 @@ export default function Navbar() {
             <div className="flex items-center gap-3 pt-2">
               <button
                 onClick={toggleLocale}
-                className="text-base font-bold text-white border border-white/50 rounded-full px-4 py-1.5 hover:bg-white/20 transition-all duration-300"
+                className="text-base font-bold text-white border-2 border-white rounded-full px-4 py-1.5 hover:bg-white/20 transition-all duration-300"
+                style={{
+                  textShadow: '0 2px 4px rgba(0, 252, 76, 0.9)'
+                }}
               >
                 {locale === 'en' ? 'ES' : 'EN'}
               </button>
               <Button
                 asChild
                 className="text-white font-bold rounded-full px-8 text-base shadow-lg border-0"
-                style={{ background: 'linear-gradient(135deg, #0096C7 0%, #023E8A 100%)' }}
+                style={{ 
+                  background: 'linear-gradient(135deg, #0096C7 0%, #023E8A 100%)',
+                  textShadow: '0 2px 4px rgba(245,124,0,0.6)'
+                }}
               >
                 <Link href={`/${locale}/contact`}>
                   {t('bookNow')}

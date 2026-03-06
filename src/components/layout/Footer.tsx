@@ -17,7 +17,7 @@ export default function Footer() {
           <div className="col-span-1 md:col-span-1">
             <div className="mb-4">
               <Image
-                src="/images/logo.png"
+                src="/logo.png"
                 alt="Cozumel Birding Tours"
                 width={160}
                 height={60}
@@ -26,8 +26,8 @@ export default function Footer() {
             </div>
             <p className="text-sm text-gray-300 leading-relaxed">
               {locale === 'en'
-                ? 'Expert birding tours in Cozumel, México. Discover endemic species with local guides.'
-                : 'Tours de avistamiento de aves en Cozumel, México. Descubre especies endémicas con guías locales.'}
+                ? 'Discover native species from  Cozumel.'
+                : ' Descubre las aves de cozumel.'}
             </p>
           </div>
 
@@ -110,20 +110,20 @@ export default function Footer() {
     style={{ color: '#0CB7F2' }} 
     className="font-semibold hover:underline transition-colors"
   >
-    ACLTelematics
+    ACL Systems
   </a>
 </p>   
           <div className="flex gap-4 items-center">
-            <a href="https://facebook.com/TU_PAGINA" target="_blank" rel="noopener noreferrer" className="text-gray-300 hover:text-white transition-colors">
+            <a href="https://www.facebook.com/p/Cozumel-Birding-Tours-100095294263434/" target="_blank" rel="noopener noreferrer" className="text-gray-300 hover:text-white transition-colors">
               <FaFacebook size={22} />
             </a>
-            <a href="https://instagram.com/TU_CUENTA" target="_blank" rel="noopener noreferrer" className="text-gray-300 hover:text-white transition-colors">
+            <a href="https://www.instagram.com/Cozumelbirdingtours" target="_blank" rel="noopener noreferrer" className="text-gray-300 hover:text-white transition-colors">
               <FaInstagram size={22} />
             </a>
-            <a href="https://tiktok.com/@TU_CUENTA" target="_blank" rel="noopener noreferrer" className="text-gray-300 hover:text-white transition-colors">
+            <a href="https://www.tiktok.com/@cozumelbirdingtours" target="_blank" rel="noopener noreferrer" className="text-gray-300 hover:text-white transition-colors">
               <FaTiktok size={22} />
             </a>
-            <a href="https://tripadvisor.com/TU_PAGINA" target="_blank" rel="noopener noreferrer" className="text-gray-300 hover:text-white transition-colors">
+            <a href="https://www.tripadvisor.com/Attraction_Review-g150809-d34046189-Reviews-Cozumel_Birding_Tours-Cozumel_Yucatan_Peninsula.html" target="_blank" rel="noopener noreferrer" className="text-gray-300 hover:text-white transition-colors">
               <FaTripadvisor size={22} />
             </a>
           </div>
