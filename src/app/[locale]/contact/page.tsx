@@ -254,19 +254,21 @@ export default function ContactPage() {
             <div className="text-center">
               <div className="w-16 h-16 bg-[#1FB6B1] text-white rounded-full flex items-center justify-center text-2xl font-bold mx-auto mb-3">1</div>
               <h3 className="font-bold text-[#263238] mb-2">
-                {locale === 'en' ? 'Check Availability' : 'Consulta Disponibilidad'}
+                {locale === 'en' ? 'Choose Your Tour' : 'Elige tu Tour'}
+               
               </h3>
               <p className="text-sm text-gray-600">
-                {locale === 'en' ? 'Via WhatsApp' : 'Por WhatsApp'}
+                {locale === 'en' ? 'Select date & tour' : 'Selecciona fecha y tour'}
               </p>
             </div>
             <div className="text-center">
               <div className="w-16 h-16 bg-[#2E7D32] text-white rounded-full flex items-center justify-center text-2xl font-bold mx-auto mb-3">2</div>
               <h3 className="font-bold text-[#263238] mb-2">
-                {locale === 'en' ? 'Choose Your Tour' : 'Elige tu Tour'}
+                {locale === 'en' ? 'Check Availability' : 'Consulta Disponibilidad'}
               </h3>
               <p className="text-sm text-gray-600">
-                {locale === 'en' ? 'Select date & tour' : 'Selecciona fecha y tour'}
+                {locale === 'en' ? 'Via WhatsApp' : 'Por WhatsApp'}
+               
               </p>
             </div>
             <div className="text-center">

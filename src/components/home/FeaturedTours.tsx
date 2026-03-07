@@ -1,109 +1,124 @@
-import { useTranslations, useLocale } from 'next-intl'
+'use client'
+import { useLocale } from 'next-intl'
 import Link from 'next/link'
+import Image from 'next/image'
 
 const tours = [
   {
-    slug: 'morning-birding',
-    duration: '4h',
-    price: 120,
-    maxPeople: 6,
-    location: 'East Coast',
-    emoji: '🌅',
+    slug: 'observacion-aves',
+    image: '/images/tours/tour-1.jpg',
+    emoji: '🦜',
+    duration: { en: '4-5 hours', es: '4-5 horas' },
+    price: '1,799',
+    transport: true,
+    name: { en: 'Bird Watching Tour', es: 'Tour de Observación de Aves' },
+    short: {
+      en: 'Discover the diversity of local birdlife with an expert local guide from Cozumel.',
+      es: 'Descubre la diversidad de la avifauna local acompañado de un guía local de Cozumel.',
+    },
   },
   {
-    slug: 'full-day-adventure',
-    duration: '8h',
-    price: 220,
-    maxPeople: 4,
-    location: 'Full Island',
-    emoji: '🗺️',
+    slug: 'sabor-naturaleza',
+    image: '/images/tours/tour-2.jpg',
+    emoji: '🌿',
+    duration: { en: '5 hours', es: '5 horas' },
+    price: '2,099',
+    transport: true,
+    name: { en: 'Cozumel Flavor & Nature', es: 'Sabor y Naturaleza de Cozumel' },
+    short: {
+      en: 'Cenote, Cedral village, island tour and authentic local food. A complete Cozumel experience.',
+      es: 'Cenote, poblado del Cedral, vuelta a la isla y comida local auténtica. Una experiencia completa.',
+    },
   },
   {
-    slug: 'photography-tour',
-    duration: '6h',
-    price: 180,
-    maxPeople: 3,
-    location: 'Best Spots',
-    emoji: '📷',
+    slug: 'punta-sur',
+    image: '/images/tours/tour-3.jpg',
+    emoji: '🦩',
+    duration: { en: '3 hours', es: '3 horas' },
+    price: '2,199', // ← ACTUALIZADO de 1,999 a 2,199
+    priceNote: { en: 'Boat tour / From $1,399 walking', es: 'Tour en lancha / Desde $1,399 a pie' }, // ← NUEVO
+    transport: false,
+    name: { 
+      en: 'Sunrise & Bird Watching at Punta Sur', // ← ACTUALIZADO
+      es: 'Amanecer y Observación de Aves en Punta Sur' // ← ACTUALIZADO
+    },
+    short: {
+      en: 'Discover unique species in the ecological reserve. Choose mangrove boat tour or walking tour.', // ← ACTUALIZADO
+      es: 'Descubre especies únicas en la reserva ecológica. Elige recorrido en lancha por manglar o tour a pie.', // ← ACTUALIZADO
+    },
   },
 ]
 
-const tourNames: Record<string, Record<string, string>> = {
-  'morning-birding': { en: 'Morning Birding Tour', es: 'Tour Matutino' },
-  'full-day-adventure': { en: 'Full Day Adventure', es: 'Aventura Día Completo' },
-  'photography-tour': { en: 'Photography Tour', es: 'Tour Fotográfico' },
-}
-
-const tourDesc: Record<string, Record<string, string>> = {
-  'morning-birding': {
-    en: 'Early morning birding focusing on Cozumel endemic species.',
-    es: 'Avistamiento matutino enfocado en especies endémicas de Cozumel.',
-  },
-  'full-day-adventure': {
-    en: 'Complete island coverage visiting multiple habitats.',
-    es: 'Cobertura completa de la isla visitando múltiples hábitats.',
-  },
-  'photography-tour': {
-    en: 'Specialized tour for bird photographers.',
-    es: 'Tour especializado para fotógrafos de aves.',
-  },
-}
-
 export default function FeaturedTours() {
-  const t = useTranslations('home.featured')
-  const td = useTranslations('tours')
   const locale = useLocale()
+  const l = locale as 'en' | 'es'
 
   return (
     <section className="py-20 bg-white">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-
-        {/* Header */}
         <div className="text-center mb-14">
           <h2 className="text-4xl font-bold text-[#1565C0] mb-4">
-            {t('title')}
+            {locale === 'en' ? 'Featured Tours' : 'Tours Destacados'}
           </h2>
-          <p className="text-lg text-gray-500">{t('subtitle')}</p>
+          <p className="text-lg text-gray-500">
+            {locale === 'en'
+              ? 'Discover our most popular experiences in Cozumel'
+              : 'Descubre nuestras experiencias más populares en Cozumel'}
+          </p>
         </div>
 
-        {/* Grid */}
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
           {tours.map((tour) => (
             <div
               key={tour.slug}
-              className="bg-[#FAFAFA] rounded-2xl overflow-hidden shadow-sm hover:shadow-md transition-shadow border border-gray-100"
+              className="bg-[#FAFAFA] rounded-2xl overflow-hidden shadow-sm hover:shadow-md transition-shadow border border-gray-100 flex flex-col"
             >
-              {/* Image placeholder */}
-              <div className="h-48 bg-gradient-to-br from-[#1FB6B1] to-[#2E7D32] flex items-center justify-center">
-                <span className="text-6xl">{tour.emoji}</span>
+              {/* Image */}
+              <div className="relative h-48 bg-gradient-to-br from-[#1FB6B1]/30 to-[#2E7D32]/30 flex items-center justify-center overflow-hidden">
+                <Image
+                  src={tour.image}
+                  alt={tour.name[l]}
+                  fill
+                  className="object-cover"
+                  onError={(e: any) => { e.currentTarget.style.display = 'none' }}
+                />
+                <span className="text-6xl opacity-20 absolute select-none">{tour.emoji}</span>
               </div>
 
               {/* Content */}
-              <div className="p-6">
+              <div className="p-6 flex flex-col flex-1">
                 <h3 className="text-xl font-bold text-[#263238] mb-2">
-                  {tourNames[tour.slug][locale]}
+                  {tour.emoji} {tour.name[l]}
                 </h3>
-                <p className="text-gray-500 text-sm mb-4">
-                  {tourDesc[tour.slug][locale]}
-                </p>
+                <p className="text-gray-500 text-sm mb-4 flex-1">{tour.short[l]}</p>
 
                 {/* Meta */}
-                <div className="flex gap-4 text-sm text-gray-500 mb-6">
-                  <span>⏱ {tour.duration}</span>
-                  <span>📍 {tour.location}</span>
-                  <span>👥 {locale === 'en' ? 'Max' : 'Máx'} {tour.maxPeople}</span>
+                <div className="flex flex-wrap gap-3 text-xs text-gray-500 mb-6">
+                  <span>⏱ {tour.duration[l]}</span>
+                  <span>👥 {locale === 'en' ? 'min 2 pax' : 'mín 2 pax'}</span>
+                  <span>{tour.transport
+                    ? <span className="text-green-600">🚐 {locale === 'en' ? 'Transport incl.' : 'Transporte incl.'}</span>
+                    : <span className="text-gray-400">🚶 {locale === 'en' ? 'No transport' : 'Sin transporte'}</span>}
+                  </span>
                 </div>
 
                 {/* Price + CTA */}
-                <div className="flex items-center justify-between">
-                  <span className="text-2xl font-bold text-[#1565C0]">
-                    ${tour.price} <span className="text-sm font-normal text-gray-400">USD</span>
-                  </span>
+                <div className="flex items-center justify-between pt-4 border-t border-gray-100 mt-auto">
+                  <div>
+                    <span className="text-2xl font-bold text-[#1565C0]">${tour.price}</span>
+                    <span className="text-xs text-gray-400 ml-1">MXN</span>
+                    {/* Mostrar nota de precio adicional si existe */}
+                    {tour.priceNote && (
+                      <div className="text-xs text-gray-500 mt-1">
+                        {tour.priceNote[l]}
+                      </div>
+                    )}
+                  </div>
                   <Link
-                    href={`/${locale}/tours/${tour.slug}`}
+                    href={`/${locale}/tours`}
                     className="bg-[#F57C00] hover:bg-[#1FB6B1] text-white text-sm font-semibold px-5 py-2 rounded-full transition-colors"
                   >
-                    {td('viewDetails')}
+                    {locale === 'en' ? 'View Details' : 'Ver Detalles'}
                   </Link>
                 </div>
               </div>

@@ -12,7 +12,7 @@ model Tour {
   name             String
   slug             String      @unique
   shortDescription String
-  fullDescription  String      @db.Text
+  fullDescription  String
   duration         Int
   price            Decimal     @db.Decimal(10, 2)
   maxPeople        Int
@@ -74,13 +74,13 @@ model ContactInquiry {
   name         String
   email        String
   phone        String?
-  message      String   @db.Text
+  message      String
   tourInterest String?
   source       String?
   ipAddress    String?
   userAgent    String?
   status       String   @default("new")
-  notes        String?  @db.Text
+  notes        String?
   createdAt    DateTime @default(now())
   updatedAt    DateTime @updatedAt
 

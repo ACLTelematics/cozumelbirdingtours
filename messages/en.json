@@ -10,22 +10,22 @@
     "hero": {
       "subtitle": "Cozumel · México",
       "title": "Cozumel Birding Tours",
-      "description": "Discover 200+ bird species in paradise",
+      "description": "Discover the birds of Cozumel.",
       "cta": "Book Your Experience"
     },
     "featured": {
       "title": "Featured Tours",
       "subtitle": "Experience the best birding adventures"
     },
-    "why": {
-      "title": "Why Choose Us",
-      "endemic": "Endemic Species",
-      "endemicDesc": "Cozumel hosts unique species found nowhere else",
-      "guides": "Expert Local Guides",
-      "guidesDesc": "15+ years of experience",
-      "small": "Small Groups",
-      "smallDesc": "Max 6 people, personalized experience"
-    },
+   "why": {
+  "title": "Why Choose Us",
+  "endemic": "Endemic Species",
+  "endemicDesc": "Cozumel hosts unique species found nowhere else",
+  "conservation": "Committed to Conservation",
+  "conservationDesc": "We promote responsible tourism that protects Cozumel's natural ecosystems",
+  "custom": "Personalized Tours",
+  "customDesc": "Flexible schedules and custom experiences tailored to your interests"
+},
     "testimonials": {
       "title": "What Our Guests Say"
     },

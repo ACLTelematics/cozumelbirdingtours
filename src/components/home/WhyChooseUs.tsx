@@ -2,8 +2,8 @@ import { useTranslations } from 'next-intl'
 
 const features = [
   { emoji: '🦜', key: 'endemic' },
-  { emoji: '👨‍🏫', key: 'guides' },
-  { emoji: '🌴', key: 'small' },
+  { emoji: '🌿', key: 'conservation' },
+  { emoji: '🗓️', key: 'custom' },
 ]
 
 export default function WhyChooseUs() {
