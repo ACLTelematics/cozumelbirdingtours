@@ -35,16 +35,16 @@ const tours = [
     image: '/images/tours/tour-3.jpg',
     emoji: '🦩',
     duration: { en: '3 hours', es: '3 horas' },
-    price: '2,199', // ← ACTUALIZADO de 1,999 a 2,199
-    priceNote: { en: 'Boat tour / From $1,399 walking', es: 'Tour en lancha / Desde $1,399 a pie' }, // ← NUEVO
+    price: '2,199',
+    priceNote: { en: 'Boat tour / From $1,399 walking', es: 'Tour en lancha / Desde $1,399 a pie' },
     transport: false,
     name: { 
-      en: 'Sunrise & Bird Watching at Punta Sur', // ← ACTUALIZADO
-      es: 'Amanecer y Observación de Aves en Punta Sur' // ← ACTUALIZADO
+      en: 'Sunrise & Bird Watching at Punta Sur',
+      es: 'Amanecer y Observación de Aves en Punta Sur'
     },
     short: {
-      en: 'Discover unique species in the ecological reserve. Choose mangrove boat tour or walking tour.', // ← ACTUALIZADO
-      es: 'Descubre especies únicas en la reserva ecológica. Elige recorrido en lancha por manglar o tour a pie.', // ← ACTUALIZADO
+      en: 'Discover unique species in the ecological reserve. Choose mangrove boat tour or walking tour.',
+      es: 'Descubre especies únicas en la reserva ecológica. Elige recorrido en lancha por manglar o tour a pie.',
     },
   },
 ]
@@ -107,7 +107,6 @@ export default function FeaturedTours() {
                   <div>
                     <span className="text-2xl font-bold text-[#1565C0]">${tour.price}</span>
                     <span className="text-xs text-gray-400 ml-1">MXN</span>
-                    {/* Mostrar nota de precio adicional si existe */}
                     {tour.priceNote && (
                       <div className="text-xs text-gray-500 mt-1">
                         {tour.priceNote[l]}
@@ -124,6 +123,16 @@ export default function FeaturedTours() {
               </div>
             </div>
           ))}
+        </div>
+
+        {/* Ver todos */}
+        <div className="text-center mt-12">
+          <Link
+            href={`/${locale}/tours`}
+            className="inline-flex items-center gap-2 border-2 border-[#1FB6B1] text-[#1FB6B1] hover:bg-[#1FB6B1] hover:text-white font-semibold px-8 py-3 rounded-full transition-colors"
+          >
+            {locale === 'en' ? 'See All Tours' : 'Ver Todos los Tours'} →
+          </Link>
         </div>
       </div>
     </section>
