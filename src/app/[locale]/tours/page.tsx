@@ -7,13 +7,12 @@ const birding = [
   {
     slug: 'observacion-aves',
     image: '/images/tours/tour-1.jpg',
-    emoji: '🦜',
-    name: { 
-      en: 'Bird Watching Tour in Cozumel', 
-      es: 'Recorridos de Observación de Aves en Cozumel' 
+        name: {
+      en: 'Birdwatching Tour in Cozumel',
+      es: 'Recorridos de Observación de Aves en Cozumel'
     },
     description: {
-      en: 'Enjoy a bird watching tour and discover the incredible diversity of local birdlife accompanied by a local guide from Cozumel. During the tour you will observe resident and migratory bird species. Throughout the experience you will learn about bird behavior, their importance within the island\'s ecosystems and interesting facts about the region\'s biodiversity. This tour is ideal for nature lovers, photographers and anyone interested in learning more about Cozumel\'s wildlife while enjoying unique natural landscapes.',
+      en: 'Enjoy a birdwatching tour and discover the incredible diversity of local birdlife, led by an expert local guide. During the tour you will observe resident and migratory bird species. Throughout the experience you will learn about bird behavior, their importance within the island\'s ecosystems and interesting facts about the region\'s biodiversity. This tour is ideal for nature lovers, photographers and anyone interested in learning more about Cozumel\'s wildlife while enjoying unique natural landscapes.',
       es: 'Disfruta de un tour de observación de aves y descubre la increíble diversidad de la avifauna local acompañado por un guía local de Cozumel. Durante el recorrido podrás observar especies de aves residentes y migratorias. A lo largo de la experiencia aprenderás sobre el comportamiento de las aves, su importancia dentro de los ecosistemas de la isla y algunos datos interesantes sobre la biodiversidad de la región. Este tour es ideal para amantes de la naturaleza, fotógrafos y cualquier persona interesada en conocer más de la vida silvestre de Cozumel mientras disfruta de paisajes naturales únicos.',
     },
     duration: { en: '4-5 hours', es: '4-5 horas' },
@@ -28,10 +27,9 @@ const birding = [
   {
     slug: 'sabor-naturaleza',
     image: '/images/tours/tour-2.jpg',
-    emoji: '🌿',
-    name: { 
-      en: 'Cozumel Flavor & Nature Tour', 
-      es: 'Sabor y Naturaleza de Cozumel' 
+      name: {
+      en: 'Cozumel Flavor & Nature Tour',
+      es: 'Sabor y Naturaleza de Cozumel'
     },
     description: {
       en: 'Interpretive tour of the cenote and its ecological importance within Cozumel\'s ecosystems. Swimming is not necessary, as the tour focuses on learning about the geology and life around these bodies of water. Afterward we will visit El Cedral village, one of the oldest settlements on the island, where you will learn about its history and traditions. We will continue with a panoramic tour of the island, including a stop on the east coast to enjoy the Caribbean Sea landscape and take photos. To end the experience, we will visit a local restaurant where you can enjoy authentic traditional food. An experience that combines nature, history, landscapes and local gastronomy.',
@@ -49,13 +47,12 @@ const birding = [
   {
     slug: 'punta-sur',
     image: '/images/tours/tour-3.jpg',
-    emoji: '🦩',
-    name: { 
-      en: 'Sunrise & Bird Watching at Punta Sur', 
-      es: 'Amanecer y Observación de Aves en Punta Sur' 
+        name: {
+      en: 'Sunrise & Birdwatching at Punta Sur',
+      es: 'Amanecer y Observación de Aves en Punta Sur'
     },
     description: {
-      en: 'Discover unique species while exploring the stunning landscapes of the Punta Sur ecological reserve in Cozumel. This protected natural area is home to diverse ecosystems such as lagoons, mangroves, coastal dunes and beautiful Caribbean beaches, which serve as home to a wide variety of flora and fauna. During the tour you will have the opportunity to observe different bird species and learn about the island\'s ecosystems and the importance of their conservation. It is an ideal experience for nature lovers, bird watchers and photographers who want to discover the most natural side of Cozumel. The tour includes observation equipment and water for your comfort.',
+      en: 'Discover unique species while exploring the stunning landscapes of the Punta Sur ecological reserve in Cozumel. This protected natural area is home to diverse ecosystems such as lagoons, mangroves, coastal dunes and beautiful Caribbean beaches, home to a wide variety of flora and fauna. During the tour you will have the opportunity to observe different bird species and learn about the island\'s ecosystems and the importance of their conservation. An ideal experience for nature lovers, birdwatchers and photographers who want to discover the most natural side of Cozumel. Binoculars and water are included.',
       es: 'Descubre especies únicas mientras exploras los impresionantes paisajes de la reserva ecológica Punta Sur en Cozumel. Esta área natural protegida alberga diversos ecosistemas como lagunas, manglares, dunas costeras y hermosas playas del Caribe, que sirven de hogar a una gran variedad de flora y fauna. Durante el recorrido tendrás la oportunidad de observar diferentes especies de aves y aprender sobre los ecosistemas de la isla y la importancia de su conservación. Es una experiencia ideal para amantes de la naturaleza, observadores de aves y fotógrafos que desean descubrir el lado más natural de Cozumel. El tour incluye equipo de observación y agua para tu comodidad.',
     },
     duration: { en: '3 hours', es: '3 horas' },
@@ -73,8 +70,8 @@ const birding = [
     ],
     minPax: 2,
     includes: {
-      en: ['Expert guide', 'Observation equipment', 'Water'],
-      es: ['Guía experta', 'Equipo de observación', 'Agua'],
+      en: ['Expert guide', 'Binoculars', 'Water'],
+      es: ['Guía experta', 'Binoculares', 'Agua'],
     },
   },
 ]
@@ -83,13 +80,12 @@ const combos = [
   {
     slug: 'aves-abejas',
     image: '/images/tours/tour-4.jpg',
-    emoji: '🐝',
-    name: { 
-      en: 'Birds & Mayan Bees', 
-      es: 'Aves y Abejas Mayas' 
+      name: {
+      en: 'Birds & Mayan Bees',
+      es: 'Aves y Abejas Mayas'
     },
     description: {
-      en: 'Discover the nature of Cozumel with our bird watching tour, combined with a fascinating tour about the Mayan Melipona bee. During this experience you will enjoy two activities within the same tour: first we will explore the natural environment to observe different bird species, and then you will learn more about the Melipona bee, a native stingless bee of great importance in the Mayan civilization culture. Throughout the tour you will learn about the region\'s biodiversity, the role of bees in ecosystems and their historical and cultural relevance. A unique experience that combines nature, culture and conservation.',
+      en: 'Discover the nature of Cozumel with our birdwatching tour, combined with a fascinating experience about the Mayan Melipona bee. During this tour you will enjoy two activities in one: first we will explore the natural environment to observe different bird species, then you will learn about the Melipona bee, a native stingless bee of great importance in Mayan culture. Throughout the tour you will learn about the region\'s biodiversity, the role of bees in ecosystems and their historical and cultural relevance. A unique experience that combines nature, culture and conservation.',
       es: 'Descubre la naturaleza de Cozumel con nuestro tour de observación de aves, combinado con un fascinante recorrido sobre la abeja melipona maya. Durante esta experiencia disfrutarás de dos actividades dentro de un mismo tour: primero exploraremos el entorno natural para observar distintas especies de aves, y después conocerás más sobre la abeja Melipona una abeja nativa sin aguijón de gran importancia en la cultura de la civilización maya. A lo largo del recorrido aprenderás sobre la biodiversidad de la región, el papel de las abejas en los ecosistemas y su relevancia histórica y cultural. Una experiencia única que combina naturaleza, cultura y conservación.',
     },
     duration: { en: '5 hours', es: '5 horas' },
@@ -109,20 +105,19 @@ const combos = [
     ],
     minPax: 2,
     includes: {
-      en: ['Expert guide', 'Bird watching', 'Melipona bee experience', 'Water'],
+      en: ['Expert guide', 'Birdwatching', 'Melipona bee experience', 'Water'],
       es: ['Guía experta', 'Observación de aves', 'Experiencia abeja melipona', 'Agua'],
     },
   },
   {
     slug: 'aves-acuarelas',
     image: '/images/tours/tour-5.jpg',
-    emoji: '🎨',
-    name: { 
-      en: 'Birds & Watercolors', 
-      es: 'Aves y Acuarelas' 
+       name: {
+      en: 'Birds & Watercolors',
+      es: 'Aves y Acuarelas'
     },
     description: {
-      en: 'Enjoy a bird watching tour in Cozumel and, at the end, let your creativity fly with a watercolor painting session. Watercolor artist María Guadalupe Arguero will guide you step by step to capture your favorite bird or any animal of your choice in a fun and relaxed class. No previous experience is necessary, just the desire to enjoy nature and art in a creative environment. A unique experience that combines bird watching and artistic expression.',
+      en: 'Enjoy a birdwatching tour in Cozumel and, at the end, let your creativity fly with a watercolor painting session. Watercolor artist María Guadalupe Arguero will guide you step by step to capture your favorite bird or any animal of your choice in a fun and relaxed class. No previous experience is necessary — just the desire to enjoy nature and art in a creative environment. A unique experience that combines birdwatching and artistic expression.',
       es: 'Disfruta de un tour de observación de aves en Cozumel y, al finalizar, deja volar tu creatividad con una sesión de pintura en acuarela. La acuarelista María Guadalupe Arguero te guiará paso a paso para plasmar tu ave favorita o cualquier animal de tu preferencia en una clase divertida y relajada. No se necesita experiencia previa, solo ganas de disfrutar la naturaleza y el arte en un ambiente creativo. Una experiencia única que combina observación de aves y expresión artística.',
     },
     duration: { en: '6 hours', es: '6 horas' },
@@ -137,13 +132,12 @@ const combos = [
   {
     slug: 'aves-sabores',
     image: '/images/tours/tour-6.jpg',
-    emoji: '🌮',
-    name: { 
-      en: 'Birds & Local Flavors', 
-      es: 'Aves y Sabores Locales' 
+       name: {
+      en: 'Birds & Local Flavors',
+      es: 'Aves y Sabores Locales'
     },
     description: {
-      en: 'Live an afternoon bird watching experience on the beautiful island of Cozumel, where you will have the opportunity to discover different species in their natural environment while enjoying the tranquility of the afternoon and the island\'s landscapes. During the tour you will learn about local birds, their behavior and the importance of conserving their habitats. At the end of the tour, enjoy authentic local tacos, a delicious way to close the experience and learn a little more about Mexican gastronomy. A perfect combination of nature and local flavors.',
+      en: 'Enjoy an afternoon birdwatching experience on the beautiful island of Cozumel, where you will discover different species in their natural environment while taking in the tranquility of the afternoon and the island\'s landscapes. During the tour you will learn about local birds, their behavior and the importance of conserving their habitats. At the end, enjoy authentic local tacos — a delicious way to close the experience and explore Mexican gastronomy. A perfect combination of nature and local flavors.',
       es: 'Vive una experiencia vespertina de observación de aves en la hermosa isla de Cozumel, donde tendrás la oportunidad de descubrir distintas especies en su entorno natural mientras disfrutas de la tranquilidad de la tarde y los paisajes de la isla. Durante el recorrido aprenderás sobre las aves locales, su comportamiento y la importancia de conservar sus hábitats. Al finalizar el tour, disfruta de auténticos tacos locales, una deliciosa forma de cerrar la experiencia y conocer un poco más de la gastronomía mexicana. Una combinación perfecta de naturaleza y sabores locales.',
     },
     duration: { en: '5 hours', es: '5 horas' },
@@ -161,13 +155,12 @@ const extras = [
   {
     slug: 'clases-pintura',
     image: '/images/tours/tour-7.jpg',
-    emoji: '🖌️',
-    name: { 
-      en: 'Painting Classes in Cozumel', 
-      es: 'Clases de Pintura en Cozumel' 
+       name: {
+      en: 'Painting Classes in Cozumel',
+      es: 'Clases de Pintura en Cozumel'
     },
     description: {
-      en: 'María Guadalupe Arguero is a local artist focused on painting who offers watercolor technique classes for people of all levels. No previous experience is necessary to participate. During the class you can choose the theme that inspires you most, such as seascapes, sunsets or nature animals, while you learn step by step the basics of this beautiful artistic technique in a relaxed and creative environment.',
+      en: 'María Guadalupe Arguero is a local artist who offers watercolor classes for all levels. No previous experience is needed. During the class you can choose the theme that inspires you most — seascapes, sunsets or wildlife — while learning the basics of this beautiful technique in a relaxed and creative environment.',
       es: 'María Guadalupe Arguero es una artista local enfocada en la pintura que ofrece clases de técnica en acuarela para personas de todos los niveles. No se necesita experiencia previa para participar. Durante la clase podrás elegir el tema que más te inspire, como paisajes del mar, atardeceres o animales de la naturaleza, mientras aprendes paso a paso las bases de esta hermosa técnica artística en un ambiente relajado y creativo.',
     },
     duration: { en: '2 hours', es: '2 horas' },
@@ -182,13 +175,12 @@ const extras = [
   {
     slug: 'circulo-cacao',
     image: '/images/tours/tour-8.jpg',
-    emoji: '🍫',
-    name: { 
-      en: 'Cacao Circle Experience', 
-      es: 'Experiencia Círculo de Cacao' 
+        name: {
+      en: 'Cacao Circle Experience',
+      es: 'Experiencia Círculo de Cacao'
     },
     description: {
-      en: 'Aku Meraki is a musical artist specialized in guiding cacao circles, using music as medicine with a holistic approach. Through songs, sounds and conscious connection, she creates transformative experiences that invite introspection and well-being, nourishing body, mind and spirit. During this experience participants will be able to connect with the energy of cacao, music and the present moment in an atmosphere of harmony and openness.',
+      en: 'Aku Meraki is a musical artist specialized in guiding cacao circles, using music as medicine with a holistic approach. Through songs, sounds and conscious connection, she creates transformative experiences that invite introspection and well-being, nourishing body, mind and spirit. Participants will connect with the energy of cacao, music and the present moment in an atmosphere of harmony and openness.',
       es: 'Aku Meraki es una artista musical especializada en guiar círculos de cacao, utilizando la música como medicina y con un enfoque holístico. A través de cantos, sonidos y conexión consciente, crea experiencias transformadoras que invitan a la introspección y al bienestar, nutriendo cuerpo, mente y espíritu. Durante esta experiencia los participantes podrán conectar con la energía del cacao, la música y el momento presente en un ambiente de armonía y apertura.',
     },
     duration: { en: '1.5 - 2 hours', es: '1.5 - 2 horas' },
@@ -203,13 +195,12 @@ const extras = [
   {
     slug: 'pesca-profunda',
     image: '/images/tours/tour-9.jpg',
-    emoji: '🎣',
-    name: { 
-      en: 'Deep Sea Fishing', 
-      es: 'Pesca Profunda' 
+       name: {
+      en: 'Deep Sea Fishing',
+      es: 'Pesca Profunda'
     },
     description: {
-      en: 'Uncle Mezo, better known as Fierro Viejo, is a Cozumel native who has spent his entire life working in the Cozumel sea. With years of experience and deep knowledge of the island\'s waters, he will guide you on an authentic fishing adventure. Dive into the Caribbean and experience the thrill of our deep sea fishing service, where you will have the opportunity to enjoy the sea and test your skills. The experience includes specialized equipment so you can enjoy the activity with comfort and safety.',
+      en: 'Uncle Mezo, better known as Fierro Viejo, is a Cozumel native who has spent his entire life on the island\'s waters. With years of experience and deep knowledge of the Caribbean Sea, he will guide you on an authentic fishing adventure. Experience the thrill of deep sea fishing with specialized equipment, enjoying the sea with comfort and safety.',
       es: 'El Tío Mezo, mejor conocido como Fierro Viejo, es un cozumeleño que ha pasado toda su vida trabajando en el mar de Cozumel. Con años de experiencia y un profundo conocimiento de las aguas de la isla, te guiará en una auténtica aventura de pesca. Adéntrate en el Caribe y vive la emoción de nuestro servicio de pesca en aguas profundas, donde tendrás la oportunidad de disfrutar del mar y poner a prueba tus habilidades. La experiencia incluye equipo especializado para que puedas disfrutar de la actividad con comodidad y seguridad.',
     },
     duration: { en: '4h (half day) · 8h (full day)', es: '4h (medio día) · 8h (día completo)' },
@@ -240,7 +231,7 @@ const extras = [
 function TourZigzag({ tour, index, locale }: { tour: any; index: number; locale: string }) {
   const l = locale as 'en' | 'es'
   const isEven = index % 2 === 0
-  
+
   const whatsappMsg = encodeURIComponent(
     locale === 'en'
       ? `Hello! I am interested in: ${tour.name.en}`
@@ -249,11 +240,11 @@ function TourZigzag({ tour, index, locale }: { tour: any; index: number; locale:
   const whatsappUrl = `https://wa.me/5219871134222?text=${whatsappMsg}`
 
   return (
-    <div className={`flex flex-col ${isEven ? 'lg:flex-row' : 'lg:flex-row-reverse'} gap-8 items-center bg-white rounded-3xl overflow-hidden shadow-sm hover:shadow-md transition-shadow p-8`}>
-      
+    <div className={`flex flex-col ${isEven ? 'lg:flex-row' : 'lg:flex-row-reverse'} gap-6 lg:gap-8 items-start lg:items-center bg-white rounded-3xl shadow-sm hover:shadow-md transition-shadow p-6 md:p-8`}>
+
       {/* Image */}
       <div className="w-full lg:w-2/5 flex-shrink-0">
-        <div className="relative h-80 rounded-2xl overflow-hidden bg-gradient-to-br from-[#1FB6B1]/20 to-[#2E7D32]/20">
+        <div className="relative h-56 sm:h-72 lg:h-80 rounded-2xl overflow-hidden bg-gradient-to-br from-[#1FB6B1]/20 to-[#2E7D32]/20">
           <Image
             src={tour.image}
             alt={tour.name[l]}
@@ -268,37 +259,37 @@ function TourZigzag({ tour, index, locale }: { tour: any; index: number; locale:
       </div>
 
       {/* Content */}
-      <div className="w-full lg:w-3/5 space-y-5">
-        
+      <div className="w-full lg:w-3/5 space-y-4">
+
         {/* Title */}
-        <h2 className="text-3xl font-bold text-[#263238] leading-tight">
+        <h2 className="text-2xl sm:text-3xl font-bold text-[#263238] leading-tight">
           {tour.emoji} {tour.name[l]}
         </h2>
 
         {/* Description */}
-        <p className="text-gray-600 text-base leading-relaxed">
+        <p className="text-gray-600 text-sm sm:text-base leading-relaxed text-justify">
           {tour.description[l]}
         </p>
 
-        {/* Badges - Duration, Pax, Transport */}
+        {/* Badges */}
         <div className="flex flex-wrap gap-2">
           {tour.duration && !tour.options && (
-            <span className="inline-flex items-center gap-1.5 bg-blue-50 text-blue-700 px-3 py-1.5 rounded-full text-sm font-medium">
+            <span className="inline-flex items-center gap-1.5 bg-blue-50 text-blue-700 px-3 py-1.5 rounded-full text-xs sm:text-sm font-medium">
               ⏱ {tour.duration[l]}
             </span>
           )}
           {tour.minPax && (
-            <span className="inline-flex items-center gap-1.5 bg-purple-50 text-purple-700 px-3 py-1.5 rounded-full text-sm font-medium">
+            <span className="inline-flex items-center gap-1.5 bg-purple-50 text-purple-700 px-3 py-1.5 rounded-full text-xs sm:text-sm font-medium">
               👥 {locale === 'en' ? `Min ${tour.minPax} pax` : `Mín ${tour.minPax} pax`}
             </span>
           )}
           {tour.transport !== undefined && (
             tour.transport ? (
-              <span className="inline-flex items-center gap-1.5 bg-green-50 text-green-700 px-3 py-1.5 rounded-full text-sm font-medium">
+              <span className="inline-flex items-center gap-1.5 bg-green-50 text-green-700 px-3 py-1.5 rounded-full text-xs sm:text-sm font-medium">
                 🚐 {locale === 'en' ? 'Transport included' : 'Transporte incluido'}
               </span>
             ) : (
-              <span className="inline-flex items-center gap-1.5 bg-gray-100 text-gray-600 px-3 py-1.5 rounded-full text-sm font-medium">
+              <span className="inline-flex items-center gap-1.5 bg-gray-100 text-gray-600 px-3 py-1.5 rounded-full text-xs sm:text-sm font-medium">
                 🚶 {locale === 'en' ? 'No transport' : 'Sin transporte'}
               </span>
             )
@@ -314,13 +305,13 @@ function TourZigzag({ tour, index, locale }: { tour: any; index: number; locale:
           ))}
         </div>
 
-        {/* Options (if multiple pricing) */}
+        {/* Options */}
         {tour.options && (
           <div className="space-y-3 pt-2">
             {tour.options.map((opt: any, i: number) => (
               <div key={i} className="flex items-center justify-between bg-gray-50 rounded-xl px-4 py-3 border border-gray-100">
                 <div className="space-y-1">
-                  <div className="font-semibold text-[#263238]">{opt.label[l]}</div>
+                  <div className="font-semibold text-[#263238] text-sm sm:text-base">{opt.label[l]}</div>
                   <div className="flex flex-wrap gap-2 text-xs text-gray-500">
                     {opt.duration && <span>⏱ {opt.duration[l]}</span>}
                     {opt.transport !== undefined && (
@@ -332,9 +323,9 @@ function TourZigzag({ tour, index, locale }: { tour: any; index: number; locale:
                     )}
                   </div>
                 </div>
-                <div className="text-right">
-                  <div className="text-2xl font-bold text-[#1565C0]">${opt.price}</div>
-                  <div className="text-xs text-gray-400">MXN</div>
+                <div className="text-right ml-4">
+                  <div className="text-xl sm:text-2xl font-bold text-[#1565C0]">${opt.price}</div>
+                  <div className="text-xs text-gray-400">MXN {locale === 'en' ? '/ per person' : '/ por persona'}</div>
                 </div>
               </div>
             ))}
@@ -349,22 +340,24 @@ function TourZigzag({ tour, index, locale }: { tour: any; index: number; locale:
         )}
 
         {/* Price + CTA */}
-        <div className="flex items-center justify-between pt-4 border-t border-gray-100">
+        <div className="flex flex-col sm:flex-row sm:items-center sm:justify-between gap-4 pt-4 border-t border-gray-100">
           {!tour.options && tour.price && (
             <div>
-              <span className="text-4xl font-bold text-[#1565C0]">${tour.price}</span>
+              <span className="text-3xl sm:text-4xl font-bold text-[#1565C0]">${tour.price}</span>
               <span className="text-sm text-gray-400 ml-2">MXN</span>
+              <span className="text-sm text-gray-500 ml-1">
+                {locale === 'en' ? '/ per person' : '/ por persona'}
+              </span>
             </div>
           )}
           {tour.options && <div />}
           
-          <a
-            href={whatsappUrl}
+<a            href={whatsappUrl}
             target="_blank"
             rel="noopener noreferrer"
-            className="inline-flex items-center gap-2 bg-[#F57C00] hover:bg-[#1FB6B1] text-white font-bold px-8 py-3.5 rounded-full transition-colors shadow-lg hover:shadow-xl ml-auto"
+            className="inline-flex items-center justify-center gap-2 bg-[#F57C00] hover:bg-[#1FB6B1] text-white font-bold px-8 py-3.5 rounded-full transition-colors shadow-lg hover:shadow-xl w-full sm:w-auto"
           >
-            <svg className="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">
+            <svg className="w-5 h-5 flex-shrink-0" fill="currentColor" viewBox="0 0 24 24">
               <path d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946.003-6.556 5.338-11.891 11.893-11.891 3.181.001 6.167 1.24 8.413 3.488 2.245 2.248 3.481 5.236 3.48 8.414-.003 6.557-5.338 11.892-11.893 11.892-1.99-.001-3.951-.5-5.688-1.448l-6.305 1.654zm6.597-3.807c1.676.995 3.276 1.591 5.392 1.592 5.448 0 9.886-4.434 9.889-9.885.002-5.462-4.415-9.89-9.881-9.892-5.452 0-9.887 4.434-9.889 9.884-.001 2.225.651 3.891 1.746 5.634l-.999 3.648 3.742-.981zm11.387-5.464c-.074-.124-.272-.198-.57-.347-.297-.149-1.758-.868-2.031-.967-.272-.099-.47-.149-.669.149-.198.297-.768.967-.941 1.165-.173.198-.347.223-.644.074-.297-.149-1.255-.462-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.297-.347.446-.521.151-.172.2-.296.3-.495.099-.198.05-.372-.025-.521-.075-.148-.669-1.611-.916-2.206-.242-.579-.487-.501-.669-.51l-.57-.01c-.198 0-.52.074-.792.372s-1.04 1.016-1.04 2.479 1.065 2.876 1.213 3.074c.149.198 2.095 3.2 5.076 4.487.709.306 1.263.489 1.694.626.712.226 1.36.194 1.872.118.571-.085 1.758-.719 2.006-1.413.248-.695.248-1.29.173-1.414z"/>
             </svg>
             {locale === 'en' ? 'Book Now' : 'Reservar Ahora'}
@@ -377,9 +370,9 @@ function TourZigzag({ tour, index, locale }: { tour: any; index: number; locale:
 
 function SectionDivider({ title }: { title: string }) {
   return (
-    <div className="flex items-center gap-6 my-16">
+    <div className="flex items-center gap-4 my-12 lg:my-16">
       <div className="flex-1 h-px bg-gradient-to-r from-transparent via-gray-300 to-transparent" />
-      <h2 className="text-2xl font-bold text-[#263238] whitespace-nowrap px-4">
+      <h2 className="text-xl sm:text-2xl font-bold text-[#263238] whitespace-nowrap px-4">
         {title}
       </h2>
       <div className="flex-1 h-px bg-gradient-to-r from-transparent via-gray-300 to-transparent" />
@@ -394,12 +387,12 @@ export default function ToursPage() {
     <div className="min-h-screen bg-[#FAFAFA]">
 
       {/* Header */}
-      <section className="bg-gradient-to-r from-[#2E7D32] to-[#1FB6B1] text-white py-20">
+      <section className="bg-gradient-to-r from-[#2E7D32] to-[#1FB6B1] text-white py-16 md:py-20">
         <div className="max-w-7xl mx-auto px-4 text-center">
-          <h1 className="text-5xl md:text-6xl font-bold mb-6">
+          <h1 className="text-4xl sm:text-5xl md:text-6xl font-bold mb-4 md:mb-6">
             {locale === 'en' ? 'Our Experiences' : 'Nuestras Experiencias'}
           </h1>
-          <p className="text-xl text-white/90 max-w-2xl mx-auto">
+          <p className="text-lg sm:text-xl text-white/90 max-w-2xl mx-auto">
             {locale === 'en'
               ? 'Authentic experiences in Cozumel with expert local guides who know the island inside out'
               : 'Experiencias auténticas en Cozumel con guías locales expertas que conocen la isla a fondo'}
@@ -408,38 +401,29 @@ export default function ToursPage() {
       </section>
 
       {/* Tours Content */}
-      <section className="max-w-6xl mx-auto px-4 py-20 space-y-12">
+      <section className="max-w-6xl mx-auto px-4 py-12 md:py-20 space-y-8 md:space-y-12">
 
-        {/* Bird Watching Tours */}
         <div>
-          <SectionDivider 
-            title={locale === 'en' ? '🦜 Bird Watching Tours' : '🦜 Recorridos de Observación de Aves'} 
-          />
-          <div className="space-y-12">
+          <SectionDivider title={locale === 'en' ? '🦜 Birdwatching Tours' : '🦜 Recorridos de Observación de Aves'} />
+          <div className="space-y-8 md:space-y-12">
             {birding.map((tour, index) => (
               <TourZigzag key={tour.slug} tour={tour} index={index} locale={locale} />
             ))}
           </div>
         </div>
 
-        {/* Combos */}
         <div>
-          <SectionDivider 
-            title={locale === 'en' ? '✨ Combos' : '✨ Combos'} 
-          />
-          <div className="space-y-12">
+          <SectionDivider title={locale === 'en' ? '✨ Combos' : '✨ Combos'} />
+          <div className="space-y-8 md:space-y-12">
             {combos.map((tour, index) => (
               <TourZigzag key={tour.slug} tour={tour} index={index + birding.length} locale={locale} />
             ))}
           </div>
         </div>
 
-        {/* Other Activities */}
         <div>
-          <SectionDivider 
-            title={locale === 'en' ? '🌟 Other Activities' : '🌟 Otras Actividades'} 
-          />
-          <div className="space-y-12">
+          <SectionDivider title={locale === 'en' ? '🌟 Other Activities' : '🌟 Otras Actividades'} />
+          <div className="space-y-8 md:space-y-12">
             {extras.map((tour, index) => (
               <TourZigzag key={tour.slug} tour={tour} index={index + birding.length + combos.length} locale={locale} />
             ))}
@@ -447,8 +431,8 @@ export default function ToursPage() {
         </div>
 
         {/* Footer note */}
-        <div className="mt-20 p-8 bg-white rounded-2xl border border-gray-100 shadow-sm text-center">
-          <p className="text-gray-600 text-base leading-relaxed">
+        <div className="mt-12 md:mt-20 p-6 md:p-8 bg-white rounded-2xl border border-gray-100 shadow-sm text-center">
+          <p className="text-gray-600 text-sm sm:text-base leading-relaxed">
             💬 {locale === 'en'
               ? 'All prices are subject to the number of participants. Tours including transport offer hotel pickup in Cozumel. Contact us for custom experiences or special requests.'
               : 'Todos los precios están sujetos al número de participantes. Los tours que incluyen transporte cuentan con recogida en hotel en Cozumel. Contáctanos para experiencias personalizadas o solicitudes especiales.'}

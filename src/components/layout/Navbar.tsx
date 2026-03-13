@@ -49,21 +49,20 @@ export default function Navbar() {
             />
           </Link>
 
-          {/* Desktop Links */}
-          <div className="hidden md:flex items-center gap-8">
-            {navLinks.map((link) => (
-              <Link
-                key={link.href}
-                href={link.href}
-                className="relative text-white font-semibold text-base tracking-wide group transition-all duration-300"
-                style={{
-                textShadow: '-1px -1px 0 #1FB6B1, 1px -1px 0 #1FB6B1, -1px 1px 0 #1FB6B1, 1px 1px 0 #1FB6B1'          }}
-              >
-                {link.label}
-                <span className="absolute -bottom-1 left-0 w-0 h-0.5 bg-white rounded-full transition-all duration-300 group-hover:w-full shadow-lg" />
-              </Link>
-            ))}
-          </div>
+{/* Desktop Links */}
+<div className="hidden md:flex items-center gap-8">
+  {navLinks.map((link) => (
+    <Link
+      key={link.href}
+      href={link.href}
+      className="relative font-semibold text-base tracking-wide group transition-all duration-300"
+      style={{ color: '#2E7D32' }}
+    >
+      {link.label}
+      <span className="absolute -bottom-1 left-0 w-0 h-0.5 bg-[#F57C00] rounded-full transition-all duration-300 group-hover:w-full" />
+    </Link>
+  ))}
+</div>
 
           {/* Right side */}
           <div className="hidden md:flex items-center gap-4">

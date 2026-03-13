@@ -121,19 +121,27 @@ export default function ContactPage() {
                   {t('tourInterest')}
                 </label>
                 <select
-                  id="tour"
-                  name="tour"
-                  value={formData.tour}
-                  onChange={handleChange}
-                  className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-[#1FB6B1] focus:border-transparent outline-none transition"
-                >
-                  <option value="">{locale === 'en' ? 'Select a tour...' : 'Selecciona un tour...'}</option>
-                  <option value="morning-birding">{locale === 'en' ? 'Morning Birding Tour' : 'Tour Matutino'}</option>
-                  <option value="full-day">{locale === 'en' ? 'Full Day Adventure' : 'Aventura Día Completo'}</option>
-                  <option value="photography">{locale === 'en' ? 'Photography Tour' : 'Tour Fotográfico'}</option>
-                  <option value="custom">{locale === 'en' ? 'Custom Tour' : 'Tour Personalizado'}</option>
-                  <option value="general">{locale === 'en' ? 'General Inquiry' : 'Consulta General'}</option>
-                </select>
+  id="tour"
+  name="tour"
+  value={formData.tour}
+  onChange={handleChange}
+  className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-[#1FB6B1] focus:border-transparent outline-none transition"
+>
+  <option value="">{locale === 'en' ? 'Select a tour...' : 'Selecciona un tour...'}</option>
+  <option value="bird-watching">{locale === 'en' ? 'Bird Watching Tour' : 'Observación de Aves'}</option>
+  <option value="flavor-nature">{locale === 'en' ? 'Flavor & Nature' : 'Sabor y Naturaleza'}</option>
+  <option value="punta-sur-boat">{locale === 'en' ? 'Sunrise at Punta Sur — Boat' : 'Amanecer en Punta Sur — Lancha'}</option>
+  <option value="punta-sur-walk">{locale === 'en' ? 'Sunrise at Punta Sur — Walking' : 'Amanecer en Punta Sur — A pie'}</option>
+  <option value="birds-bees-full">{locale === 'en' ? 'Birds & Mayan Bees — Full Experience' : 'Aves y Abejas Mayas — Experiencia Completa'}</option>
+  <option value="birds-bees-express">{locale === 'en' ? 'Birds & Mayan Bees — Express' : 'Aves y Abejas Mayas — Exprés'}</option>
+  <option value="birds-watercolors">{locale === 'en' ? 'Birds & Watercolors' : 'Aves y Acuarelas'}</option>
+  <option value="birds-flavors">{locale === 'en' ? 'Birds & Local Flavors' : 'Aves y Sabores Locales'}</option>
+  <option value="painting">{locale === 'en' ? 'Painting Class' : 'Clases de Pintura'}</option>
+  <option value="cacao">{locale === 'en' ? 'Cacao Circle' : 'Círculo de Cacao'}</option>
+  <option value="fishing-half">{locale === 'en' ? 'Deep Fishing — Half Day' : 'Pesca Profunda — Medio Día'}</option>
+  <option value="fishing-full">{locale === 'en' ? 'Deep Fishing — Full Day' : 'Pesca Profunda — Día Completo'}</option>
+  <option value="general">{locale === 'en' ? 'General Inquiry' : 'Consulta General'}</option>
+</select>
               </div>
               <div>
                 <label htmlFor="message" className="block text-sm font-medium text-[#263238] mb-1">

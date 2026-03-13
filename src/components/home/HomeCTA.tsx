@@ -24,16 +24,16 @@ export default function HomeCTA() {
   </div>
 </div>
 
-       {/* Bio */}
-       <div className="text-white text-center md:text-left">
-            <h2 className="text-3xl font-bold mb-1">Melba Aguilera</h2>
+      {/* Bio */}
+      <div className="text-white text-center md:text-left">
+            <h2 className="text-3xl font-bold mb-1">Lic. Melba Aguilera</h2>
             <p className="text-white/80 text-sm mb-4">
-              {locale === 'en' ? 'Certified Bird Guide · Cozumel' : 'Guía Certificada · Cozumel'}
+              {locale === 'en' ? 'Licensed in Tourism & Certified Guide · Cozumel' : 'Licenciada en Turismo y Guía Certificada · Cozumel'}
             </p>
-            <p className="text-white/90 text-lg leading-relaxed mb-6">
+            <p className="text-white/90 text-lg leading-relaxed mb-6 text-justify">
               {locale === 'en'
                 ? 'Hi, I\'m Melba. I was raised in Cozumel, an island unique for its biodiversity. For more than 7 years I have been sharing the extraordinary birdlife of this place with visitors from around the world. My passion for birds and nature is what drives me every morning to go out into the field, observe, learn and teach. I invite you to join me and live an authentic and unforgettable experience, connecting with the nature of Cozumel through its birds.'
-                : 'Hola, soy Melba. Crecí en Cozumel, una isla única por su biodiversidad. Desde hace más de 7 años me dedico a compartir con visitantes de todo el mundo la extraordinaria vida aviaria que habita este lugar. Mi pasión por las aves y la naturaleza es lo que me impulsa cada mañana a salir al campo, observar, aprender y enseñar. Te invito a acompañarme y vivir una experiencia auténtica e inolvidable, conectando con la naturaleza de Cozumel a través de sus aves.'
+                : 'Hola, soy Melba. Crecí en Cozumel, una isla única por su biodiversidad. Desde hace más de 7 años me dedico a compartir con visitantes de todo el mundo la extraordinaria vida de aves que habita este lugar. Mi pasión por las aves y la naturaleza es lo que me impulsa cada mañana a salir al campo, observar, aprender y enseñar. Te invito a acompañarme y vivir una experiencia auténtica e inolvidable, conectando con la naturaleza de Cozumel a través de sus aves.'
               }
             </p>
             <div className="flex flex-wrap gap-3 justify-center md:justify-start">
@@ -44,7 +44,7 @@ export default function HomeCTA() {
                 {locale === 'en' ? 'Certified Guide' : 'Guía Certificada'}
               </span>
               <span className="bg-white/20 text-white text-sm px-4 py-1 rounded-full">
-                {locale === 'en' ? 'Born in Cozumel' : 'Nativa de Cozumel'}
+                {locale === 'en' ? 'Birding Tours in Cozumel' : 'Recorridos de Aves en Cozumel'}
               </span>
             </div>
           </div>
