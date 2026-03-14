@@ -79,13 +79,13 @@ export default function FeaturedTours() {
                   className="object-cover"
                   onError={(e: any) => { e.currentTarget.style.display = 'none' }}
                 />
-                <span className="text-6xl opacity-20 absolute select-none">{tour.emoji}</span>
+              
               </div>
 
               {/* Content */}
               <div className="p-5 md:p-6 flex flex-col flex-1">
                 <h3 className="text-lg sm:text-xl font-bold text-[#263238] mb-2">
-                  {tour.emoji} {tour.name[l]}
+                  {tour.name[l]}
                 </h3>
                 <p className="text-gray-500 text-sm mb-4 flex-1">{tour.short[l]}</p>
 
