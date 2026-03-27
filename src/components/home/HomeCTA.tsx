@@ -28,7 +28,7 @@ export default function HomeCTA() {
       <div className="text-white text-center md:text-left">
             <h2 className="text-3xl font-bold mb-1">Lic. Melba Aguilera</h2>
             <p className="text-white/80 text-sm mb-4">
-              {locale === 'en' ? 'Licensed in Tourism & Certified Guide · Cozumel' : 'Licenciada en Turismo y Guía Certificada · Cozumel'}
+            {locale === 'en' ? "Bachelor's in Tourism & Certified Bird Guide · Cozumel" : 'Licenciada en Turismo y Guía Certificada · Cozumel'}
             </p>
             <p className="text-white/90 text-lg leading-relaxed mb-6 text-justify">
               {locale === 'en'
@@ -50,6 +50,8 @@ export default function HomeCTA() {
           </div>
         </div>
       </div>
+
     </section>
+
   )
 }
