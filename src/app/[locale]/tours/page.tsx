@@ -64,7 +64,7 @@ const birding = [
       },
       {
         label: { en: 'Walking tour', es: 'Tour a pie' },
-        price: '1,399',
+        price: '1,599',
         transport: false,
       },
     ],
@@ -195,7 +195,8 @@ const extras = [
   {
     slug: 'pesca-profunda',
     image: '/images/tours/tour-9.jpg',
-       name: {
+    emoji: '🎣',
+    name: {
       en: 'Deep Sea Fishing',
       es: 'Pesca Profunda'
     },
@@ -203,17 +204,17 @@ const extras = [
       en: 'Uncle Mezo, better known as Fierro Viejo, is a Cozumel native who has spent his entire life on the island\'s waters. With years of experience and deep knowledge of the Caribbean Sea, he will guide you on an authentic fishing adventure. Experience the thrill of deep sea fishing with specialized equipment, enjoying the sea with comfort and safety.',
       es: 'El Tío Mezo, mejor conocido como Fierro Viejo, es un cozumeleño que ha pasado toda su vida trabajando en el mar de Cozumel. Con años de experiencia y un profundo conocimiento de las aguas de la isla, te guiará en una auténtica aventura de pesca. Adéntrate en el Caribe y vive la emoción de nuestro servicio de pesca en aguas profundas, donde tendrás la oportunidad de disfrutar del mar y poner a prueba tus habilidades. La experiencia incluye equipo especializado para que puedas disfrutar de la actividad con comodidad y seguridad.',
     },
-    duration: { en: '4h (half day) · 8h (full day)', es: '4h (medio día) · 8h (día completo)' },
+    duration: { en: '6h · Full day', es: '6h · Día completo' },
     options: [
       {
-        label: { en: 'Half day', es: 'Medio día' },
-        price: '7,199',
-        duration: { en: '4 hours', es: '4 horas' },
+        label: { en: '6 hours (1-4 pax)', es: '6 horas (1-4 pax)' },
+        price: '9,199',
+        duration: { en: '6 hours', es: '6 horas' },
       },
       {
-        label: { en: 'Full day', es: 'Día completo' },
-        price: '10,599',
-        duration: { en: '8 hours', es: '8 horas' },
+        label: { en: 'Full day (1-4 pax)', es: 'Día completo (1-4 pax)' },
+        price: '11,599',
+        duration: { en: 'Full day', es: 'Día completo' },
       },
     ],
     transport: false,
