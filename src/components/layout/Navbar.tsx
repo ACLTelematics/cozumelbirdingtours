@@ -49,20 +49,20 @@ export default function Navbar() {
             />
           </Link>
 
-{/* Desktop Links */}
-<div className="hidden md:flex items-center gap-8">
-  {navLinks.map((link) => (
-    <Link
-      key={link.href}
-      href={link.href}
-      className="relative font-semibold text-base tracking-wide group transition-all duration-300"
-      style={{ color: '#2E7D32' }}
-    >
-      {link.label}
-      <span className="absolute -bottom-1 left-0 w-0 h-0.5 bg-[#F57C00] rounded-full transition-all duration-300 group-hover:w-full" />
-    </Link>
-  ))}
-</div>
+          {/* Desktop Links */}
+          <div className="hidden md:flex items-center gap-8">
+            {navLinks.map((link) => (
+              <Link
+                key={link.href}
+                href={link.href}
+                className="relative font-semibold text-base tracking-wide group transition-all duration-300"
+                style={{ color: '#2E7D32' }}
+              >
+                {link.label}
+                <span className="absolute -bottom-1 left-0 w-0 h-0.5 bg-[#F57C00] rounded-full transition-all duration-300 group-hover:w-full" />
+              </Link>
+            ))}
+          </div>
 
           {/* Right side */}
           <div className="hidden md:flex items-center gap-4">
@@ -94,11 +94,9 @@ export default function Navbar() {
 
           {/* Mobile menu button */}
           <button
-            className="md:hidden text-white"
+            className="md:hidden"
             onClick={() => setIsOpen(!isOpen)}
-            style={{
-              textShadow: '0 2px 4px rgba(245,124,0,0.9)'
-            }}
+            style={{ color: '#2E7D32' }}
           >
             {isOpen ? <X size={24} /> : <Menu size={24} />}
           </button>
@@ -106,20 +104,17 @@ export default function Navbar() {
 
         {/* Mobile Menu */}
         {isOpen && (
-          <div
-            className="md:hidden py-4 flex flex-col gap-4 border-t border-white/20"
-          >
+          <div className="md:hidden py-4 flex flex-col gap-4 border-t border-white/20">
             {navLinks.map((link) => (
               <Link
                 key={link.href}
                 href={link.href}
-                className="text-white font-semibold text-base hover:text-orange-200 transition-colors"
-                style={{
-                  textShadow: '0 2px 4px rgba(0, 245, 204, 0.9), 1px 1px 2px rgb(0, 245, 245)'
-                }}
+                className="relative font-semibold text-base tracking-wide group transition-all duration-300"
+                style={{ color: '#2E7D32' }}
                 onClick={() => setIsOpen(false)}
               >
                 {link.label}
+                <span className="absolute -bottom-1 left-0 w-0 h-0.5 bg-[#F57C00] rounded-full transition-all duration-300 group-hover:w-full" />
               </Link>
             ))}
             <div className="flex items-center gap-3 pt-2">
@@ -127,7 +122,7 @@ export default function Navbar() {
                 onClick={toggleLocale}
                 className="text-base font-bold text-white border-2 border-white rounded-full px-4 py-1.5 hover:bg-white/20 transition-all duration-300"
                 style={{
-                  textShadow: '0 2px 4px rgba(0, 252, 76, 0.9)'
+                  textShadow: '0 2px 4px rgba(245,124,0,0.9), 1px 1px 2px rgba(245,124,0,1)'
                 }}
               >
                 {locale === 'en' ? 'ES' : 'EN'}
@@ -137,7 +132,7 @@ export default function Navbar() {
                 className="text-white font-bold rounded-full px-8 text-base shadow-lg border-0"
                 style={{ 
                   background: 'linear-gradient(135deg, #0096C7 0%, #023E8A 100%)',
-                  textShadow: '0 2px 4px rgba(245,124,0,0.6)'
+                  textShadow: '0 2px 4px rgba(245,124,0,0.6), 1px 1px 2px rgba(245,124,0,0.8)'
                 }}
               >
                 <Link href={`/${locale}/contact`}>
